@@ -1,0 +1,14 @@
+# PermissionsRanks
+#      rollbackcmd: undo <player>
+
+onChat:
+  RankColorPly: '&a'
+  RankColorWht: '&7'
+  RankColorCre: '&e'
+  RankColorMod: '&9' 
+  RankColorAdm: '&c'
+  RankColorOps: '&8'
+onBan:
+  RollbackComd: 
+Version:
+  ConfigYMLVer: 1

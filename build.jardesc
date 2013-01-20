@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="WINDOWS-1252" standalone="no"?>
+<jardesc>
+    <jar path="z:/mc2.auzcraft.com/plugins/PermissionsRanks.jar"/>
+    <options buildIfNeeded="true" compress="false" descriptionLocation="/PermissionsRanks/build.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="true" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <file path="/PermissionsRanks/.gitignore"/>
+        <file path="/PermissionsRanks/.classpath"/>
+        <file path="/PermissionsRanks/.project"/>
+        <file path="/PermissionsRanks/config.yml"/>
+        <javaElement handleIdentifier="=PermissionsRanks/src"/>
+        <file path="/PermissionsRanks/plugin.yml"/>
+        <file path="/PermissionsRanks/build.jardesc"/>
+    </selectedElements>
+</jardesc>

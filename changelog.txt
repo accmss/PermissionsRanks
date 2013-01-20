@@ -1,0 +1,5 @@
+Version 1.4.0
+
+- added promote command
+- added demote command
+- added chat color

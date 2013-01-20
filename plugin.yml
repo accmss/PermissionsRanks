@@ -1,0 +1,11 @@
+name: PermissionsRanks
+main: com.accmss.permissionsranks.PermissionsRanks
+version: 1.5.5
+description: PermissionsRanks permissions.
+
+commands:
+   online:
+      description: Lists Players online.
+      usage: /online
+      permission: permissionsranks.admin
+      permisison-message: You don't have permissions
