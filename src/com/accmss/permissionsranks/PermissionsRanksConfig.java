@@ -89,12 +89,20 @@ public static void SetSlash(String file)
 private static void EnsureConfig()
 {
 
+	File fileDir = new File("plugins" + SlashChar + "PermissionsRanks");
 	String zFile = "plugins" + SlashChar + "PermissionsRanks" + SlashChar + "config.yml";
 	File f = new File(zFile);
 
+		//Directory
+		if (!fileDir.exists())
+		{
+		fileDir.mkdir();
+		}
+
+		//File
 		if(!f.isFile())
 		{ 
-		PermissionsRanksLib.Chat(PermissionsRanks.zPlugin.getServer().getConsoleSender(), "BlockUndo", "§fWriting new configuration.yml.");
+		PermissionsRanksLib.Chat(PermissionsRanks.zPlugin.getServer().getConsoleSender(), "PermissionsRanks", "§fWriting new configuration.yml.");
 		CreateConfig(zFile);
 		}
 		else
@@ -102,7 +110,7 @@ private static void EnsureConfig()
 		PermissionsRanks.zConfig = PermissionsRanks.zPlugin.getConfig();
 		}
 
-		//Update config
+		//Update 
 	    try
 	    {ConfigYMLVer = PermissionsRanks.zConfig.getInt("Version.ConfigYMLVer", ConfigYMLVer);}
 		catch (Exception e)
