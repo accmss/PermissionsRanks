@@ -76,7 +76,7 @@ public void onPlayerJoin(final PlayerJoinEvent event)
 {
 
 
-	PermissionsRanks.zPlugin.getServer().getScheduler().runTaskLater(PermissionsRanks.zPlugin, new Runnable() {
+	PermissionsRanks.zPlugin.getServer().getScheduler().runTaskLaterAsynchronously(PermissionsRanks.zPlugin, new Runnable() {
 	
 	public void run() {
 		   
