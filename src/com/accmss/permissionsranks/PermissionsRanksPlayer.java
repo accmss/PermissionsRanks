@@ -90,7 +90,7 @@ public void onPlayerJoin(final PlayerJoinEvent event)
 
 		}
 
-	}, 4L); 
+	}, 8L); 
 
 }
 @EventHandler (priority = EventPriority.NORMAL)
