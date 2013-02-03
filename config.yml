@@ -7,7 +7,7 @@ onChat:
   RankColorCre: '&e'
   RankColorMod: '&9' 
   RankColorAdm: '&c'
-  RankColorOps: '&c'
+  RankColorOps: '&8'
 onBan:
   RollbackComd: 
 Version:
