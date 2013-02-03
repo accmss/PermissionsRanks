@@ -75,13 +75,10 @@ message = event.getMessage().toLowerCase().replaceAll("/", "");
 public void onPlayerJoin(final PlayerJoinEvent event)
 {
 
-
 	PermissionsRanks.zPlugin.getServer().getScheduler().runTaskLaterAsynchronously(PermissionsRanks.zPlugin, new Runnable() {
 	
-	public void run() {
-		   
+	public void run() {   
 	player = event.getPlayer();
-
 
 			if (player.isOnline())
 			{
@@ -90,7 +87,7 @@ public void onPlayerJoin(final PlayerJoinEvent event)
 
 		}
 
-	}, 8L); 
+	}, 1L); 
 
 }
 @EventHandler (priority = EventPriority.NORMAL)
