@@ -2,13 +2,13 @@
 #      rollbackcmd: undo <player>
 
 onChat:
-  RankColorPly: '&a'
-  RankColorWht: '&7'
-  RankColorCre: '&e'
-  RankColorMod: '&9' 
-  RankColorAdm: '&c'
-  RankColorOps: '&8'
+  RankColorPly: '&a<player>&a'
+  RankColorWht: '&7<player>&7'
+  RankColorCre: '&e<player>&e'
+  RankColorMod: '&9<player>&9' 
+  RankColorAdm: '&c<player>&c'
+  RankColorOps: '&8<player>&8'
 onBan:
   RollbackComd: 
 Version:
-  ConfigYMLVer: 1
+  ConfigYMLVer: 2

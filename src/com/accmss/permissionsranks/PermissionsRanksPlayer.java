@@ -87,7 +87,7 @@ public void onPlayerJoin(final PlayerJoinEvent event)
 
 		}
 
-	}, 1L); 
+	}, 4L); 
 
 }
 @EventHandler (priority = EventPriority.NORMAL)
@@ -100,9 +100,23 @@ public void onPlayerQuit (PlayerQuitEvent event)
 @EventHandler (priority = EventPriority.NORMAL)
 public void onAsyncPlayerChatEvent(AsyncPlayerChatEvent event)
 {
+	
+String msg = null;
+//String format1 = null;
+//String format2 = null;
 
-	event.setFormat(PermissionsRanksLib.GetRank(event.getPlayer().getName())  + "<§f%1$s§a" + PermissionsRanksLib.GetRank(event.getPlayer().getName()) + ">§f %2$s");
+	msg = PermissionsRanksLib.GetRank(event.getPlayer().getName());	//1 we get our format
+	msg = msg.replace("<player>", "<§f%1$s§a");						//2 we replace out player with bukkit player before our 1 color code
+	msg = msg + ">§f %2$s";											//3 we add the final bracket onto our existing 2nd color code 
+	
+	//format1 = msg;
+	//format2 = PermissionsRanksLib.GetRank("§2" + "<§f%1$s§a" + "§2" + ">§f %2$s");
+	
+	//event.setFormat(PermissionsRanksLib.GetRank(event.getPlayer().getName())  + "<§f%1$s§a" + PermissionsRanksLib.GetRank(event.getPlayer().getName()) + ">§f %2$s");
+	event.setFormat(msg);
 
+	//PermissionsRanksLib.Chat(event.getPlayer(), "PermissionsRanks", format1);
+	//PermissionsRanksLib.Chat(event.getPlayer(), "PermissionsRanks", format2);
 }
 
 
