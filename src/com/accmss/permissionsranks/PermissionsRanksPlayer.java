@@ -35,10 +35,12 @@ String message = "";
 
 message = event.getMessage().toLowerCase().replaceAll("/", "");
 
+	//PermissionsRanksLib.Chat(event.getPlayer(), "PermissionsRanks", "debug1.");
 
 		if (message.indexOf("unban") == 0 || message.indexOf("pardon") == 0 ||
 		message.indexOf("op")    == 0 || message.indexOf("deop")   == 0)
 		{
+		//PermissionsRanksLib.Chat(event.getPlayer(), "PermissionsRanks", "debug2.");
 		PermissionsRanksLib.Chat(event.getPlayer(), "PermissionsRanks", "Command cancelled.");
 		PermissionsRanksLib.Chat(PermissionsRanks.zPlugin.getServer().getConsoleSender(), "PermissionsRanks", event.getPlayer().getName() + " tried to issue a " + message + " command.");
 		event.setCancelled(true);
@@ -50,19 +52,30 @@ message = event.getMessage().toLowerCase().replaceAll("/", "");
 			//new prevent players from performing bans
 			if (PermissionsRanksLib.GetRank(event.getPlayer().getName()).equalsIgnoreCase("player"))
 			{
+			//PermissionsRanksLib.Chat(event.getPlayer(), "PermissionsRanks", "debug3.");
 			return;
 			}
 
-			if (PermissionsRanksConfig.RollbackComd == null) return;
+			if (PermissionsRanksConfig.RollbackComd == null)
+			{
+			//PermissionsRanksLib.Chat(event.getPlayer(), "PermissionsRanks", "debug4.");
+			return;
+			}
 			
 			if (PermissionsRanksConfig.RollbackComd.length() > 0) 
 			{
+			//PermissionsRanksLib.Chat(event.getPlayer(), "PermissionsRanks", "debug5.");
 			String[] splits = message.split(" ");
 			String command;
 			command = PermissionsRanksConfig.RollbackComd.replace("<player>", splits[1]);
+			//PermissionsRanksLib.Chat(event.getPlayer(), "PermissionsRanks", command);
 			PermissionsRanks.zPlugin.getServer().dispatchCommand(event.getPlayer(), command);
 			return;
 			}
+		}
+		else
+		{
+		PermissionsRanksLib.Chat(event.getPlayer(), "PermissionsRanks", "Command cancelled.");
 		}
 
 

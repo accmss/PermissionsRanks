@@ -85,7 +85,7 @@ public void onEnable() {
 	PermissionsRanksMetricsLite metrics = new PermissionsRanksMetricsLite(this);
 	metrics.start();
 	} catch (IOException e) {
-	PermissionsRanksLib.Chat(PermissionsRanks.zPlugin.getServer().getConsoleSender(), "[MetricsLite]", e.getCause() + " : " + e.getMessage());
+	PermissionsRanksLib.Chat(PermissionsRanks.zPlugin.getServer().getConsoleSender(), "MetricsLite", e.getCause() + " : " + e.getMessage());
 	}
 	
 	//Listners
@@ -122,8 +122,8 @@ boolean IsPlayer = false;
 
 		if (cmd.getName().equalsIgnoreCase("permissionsranks")) icase = 0;
 		if (cmd.getName().equalsIgnoreCase("online"))	icase = 1;
-		if (cmd.getName().equalsIgnoreCase("promote"))	icase = 2;
-		if (cmd.getName().equalsIgnoreCase("demote"))	icase = 3;
+		//if (cmd.getName().equalsIgnoreCase("promote"))	icase = 2;
+		//if (cmd.getName().equalsIgnoreCase("demote"))	icase = 3;
 
 		switch (icase) 
 		{
