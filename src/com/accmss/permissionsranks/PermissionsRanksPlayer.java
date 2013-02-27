@@ -40,7 +40,6 @@ message = event.getMessage().toLowerCase().replaceAll("/", "");
 		if (message.indexOf("unban") == 0 || message.indexOf("pardon") == 0 ||
 		message.indexOf("op")    == 0 || message.indexOf("deop")   == 0)
 		{
-		//PermissionsRanksLib.Chat(event.getPlayer(), "PermissionsRanks", "debug2.");
 		PermissionsRanksLib.Chat(event.getPlayer(), "PermissionsRanks", "Command cancelled.");
 		PermissionsRanksLib.Chat(PermissionsRanks.zPlugin.getServer().getConsoleSender(), "PermissionsRanks", event.getPlayer().getName() + " tried to issue a " + message + " command.");
 		event.setCancelled(true);
@@ -73,11 +72,6 @@ message = event.getMessage().toLowerCase().replaceAll("/", "");
 			return;
 			}
 		}
-		else
-		{
-		PermissionsRanksLib.Chat(event.getPlayer(), "PermissionsRanks", "Command cancelled.");
-		}
-
 
 
 

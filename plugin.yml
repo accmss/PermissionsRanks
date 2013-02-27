@@ -1,6 +1,6 @@
 name: PermissionsRanks
 main: com.accmss.permissionsranks.PermissionsRanks
-version: 1.5.7
+version: 1.6
 description: PermissionsRanks permissions.
 
 commands:
